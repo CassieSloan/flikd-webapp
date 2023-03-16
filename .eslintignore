@@ -1,0 +1,5 @@
+*.json
+.eslintrc.js
+node_modules
+.next
+.vscode

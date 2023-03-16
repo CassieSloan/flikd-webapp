@@ -3,20 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "---- NEXT ----": "",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "---- LINT ----": "",
+    "lint": "next lint",
+    "---- DEPS ----": "",
+    "clear": "rm -rf node_modules",
+    "reset": "clear && yarn && yarn dev",
+    "pin": "yarn add --exact",
+    "add:dev": "yarn pin --dev"
   },
   "dependencies": {
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "13.2.4",
+    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/parser": "5.55.0",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-config-prettier": "8.7.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsdoc": "40.0.3",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-sort": "2.7.1",
+    "prettier": "2.8.4",
+    "typescript-eslint": "^0.0.1-alpha.0"
   }
 }
